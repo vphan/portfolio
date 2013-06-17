@@ -25,7 +25,7 @@
 
   gallery: (el, photosetId) ->
 
-    photosetId ||= '72157633538652413'
+    photosetId ||= '72157633540076637'
 
     collection = new Vp.Collections.FlickrImages( photosetId: photosetId )
     collection.fetch()

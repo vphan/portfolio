@@ -16506,7 +16506,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     gallery: function(el, photosetId) {
       var collection, gallery;
 
-      photosetId || (photosetId = '72157633538652413');
+      photosetId || (photosetId = '72157633540076637');
       collection = new Vp.Collections.FlickrImages({
         photosetId: photosetId
       });
@@ -16705,7 +16705,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     }
 
     FlickrImages.prototype.initialize = function(options) {
-      return this.photosetId = options.photosetId || '72157633537737691';
+      return this.photosetId = options.photosetId || '72157633540076637';
     };
 
     FlickrImages.prototype.url = function() {
@@ -16713,7 +16713,11 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
     };
 
     FlickrImages.prototype.parse = function(resp, xhr) {
-      return resp.photoset.photo;
+      var photoset;
+
+      if (photoset = resp.photoset) {
+        return photoset.photo;
+      }
     };
 
     FlickrImages.prototype.model = Vp.Models.FlickrImage;
