@@ -1,0 +1,18 @@
+markdown: rdiscount
+auto: true
+
+exclude: ["README.md", "LICENSE.md", "TODO.md", "build", "test"]
+
+owner-name: your name
+owner-page: your homepage
+owner-email: your email
+
+license: your license of choice
+
+#source: ./_src
+#plugins:     ./_src/_plugins
+#destination: ./site
+baseurl:    ''
+
+#assets:
+#  baseurl: ../site/assets
