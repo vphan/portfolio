@@ -17,4 +17,16 @@ class Vp.Views.Gallery extends Backbone.View
       @$el.append( view.render().el )
       @$('a').fancybox()
       return
+
+    @$el.gridalicious({
+      animate: true,
+      width: 300,
+      gutter: 0,
+      selector: '.gallery-thumbnail',
+      animationOptions: {
+          speed: 100,
+          duration: 200
+      }
+    })
+
     @

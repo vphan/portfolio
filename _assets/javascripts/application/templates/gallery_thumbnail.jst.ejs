@@ -1,9 +1,10 @@
-<%=model.get('title')%><br>
-
 <a class="fancybox" rel="gallery1" href="<%=model.imageUrl('b')%>" title="<%=model.get('title')%>">
-  <img src="<%=model.imageUrl('z')%>" alt="" />
+  <img class="thumb-medium" src="<%=model.imageUrl('z')%>" alt="" />
 </a>
 <p>
-<%=model.get('description')['_content']%>
-</p>
+  <strong>
+    <%=model.get('title')%><br>
+  </strong>
 
+  <%=model.get('description')['_content']%>
+</p>
