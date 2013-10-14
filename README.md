@@ -12,11 +12,13 @@ This site is built using [Jekyll](http://jekyllrb.com/) and hosted using [GitHub
 
 Update the bundle and start jekyll. vahnphan.com will be available locally @ http://localhost:4000/
 
-  bundle update
-  jekyll serve --watch
-
+```
+bundle update
+jekyll serve --watch
+```
 
 Assets are pre compiled with a rake task.
 
-  rake assets:compile
-
+```
+rake assets:compile
+```
